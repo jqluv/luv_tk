@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php _tk_content_nav( 'nav-below' ); ?>
+		<?php luv_tk_content_nav( 'nav-below' ); ?>
 
 	<?php else : ?>
 

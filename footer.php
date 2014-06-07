@@ -18,10 +18,10 @@
 			<div class="site-footer-inner col-sm-12">
 
 				<div class="site-info">
-					<?php do_action( '_tk_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_tk' ), 'WordPress' ); ?></a>
+					<?php do_action( 'luv_tk_credits' ); ?>
+					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_luv_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_luv_tk' ), 'WordPress' ); ?></a>
 					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', '_tk' ), '_tk', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+					<?php printf( __( 'Theme: %1$s by %2$s.', '_luv_tk' ), '_luv_tk', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 				</div><!-- close .site-info -->
 
 			</div>

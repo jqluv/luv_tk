@@ -28,7 +28,7 @@ get_header(); ?>
 							 * what author we're dealing with (if that is the case).
 							*/
 							the_post();
-							printf( __( 'Author: %s', '_tk' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', '_luv_tk' ), '<span class="vcard">' . get_the_author() . '</span>' );
 							/* Since we called the_post() above, we need to
 							 * rewind the loop back to the beginning that way
 							 * we can run the loop properly, in full.
@@ -36,31 +36,31 @@ get_header(); ?>
 							rewind_posts();
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', '_tk' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', '_luv_tk' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', '_tk' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+							printf( __( 'Month: %s', '_luv_tk' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', '_tk' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+							printf( __( 'Year: %s', '_luv_tk' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', '_tk' );
+							_e( 'Asides', '_luv_tk' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', '_tk');
+							_e( 'Images', '_luv_tk');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', '_tk' );
+							_e( 'Videos', '_luv_tk' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', '_tk' );
+							_e( 'Quotes', '_luv_tk' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', '_tk' );
+							_e( 'Links', '_luv_tk' );
 
 						else :
-							_e( 'Archives', '_tk' );
+							_e( 'Archives', '_luv_tk' );
 
 						endif;
 					?>
@@ -87,7 +87,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _tk_content_nav( 'nav-below' ); ?>
+			<?php luv_tk_content_nav( 'nav-below' ); ?>
 
 		<?php else : ?>
 
