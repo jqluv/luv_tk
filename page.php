@@ -7,7 +7,6 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package _tk
  */
 
 get_header(); ?>
@@ -24,5 +23,5 @@ get_header(); ?>
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

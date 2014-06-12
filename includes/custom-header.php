@@ -13,41 +13,39 @@
 	<?php } // if ( ! empty( $header_image ) ) ?>
 
  *
- * @package _tk
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses luv_tk_header_style()
- * @uses luv_tk_admin_header_style()
- * @uses luv_tk_admin_header_image()
+ * @uses jqluv_header_style()
+ * @uses jqluv_admin_header_style()
+ * @uses jqluv_admin_header_image()
  *
- * @package _tk
  */
-function luv_tk_custom_header_setup() {
+function jqluv_custom_header_setup() {
 	if ( function_exists( 'add_theme_support' ) ) {
-		add_theme_support( 'custom-header', apply_filters( 'luv_tk_custom_header_args', array(
+		add_theme_support( 'custom-header', apply_filters( 'jqluv_custom_header_args', array(
 			'default-image'          => '',
 			'default-text-color'     => '000',
 			'width'                  => 1170,
 			'height'                 => 250,
 			'flex-height'            => true,
-			'wp-head-callback'       => 'luv_tk_header_style',
-			'admin-head-callback'    => 'luv_tk_admin_header_style',
-			'admin-preview-callback' => 'luv_tk_admin_header_image',
+			'wp-head-callback'       => 'jqluv_header_style',
+			'admin-head-callback'    => 'jqluv_admin_header_style',
+			'admin-preview-callback' => 'jqluv_admin_header_image',
 		) ) );
 	}
 }
-add_action( 'after_setup_theme', 'luv_tk_custom_header_setup' );
+add_action( 'after_setup_theme', 'jqluv_custom_header_setup' );
 
-if ( ! function_exists( 'luv_tk_header_style' ) ) :
+if ( ! function_exists( 'jqluv_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see luv_tk_custom_header_setup().
+ * @see jqluv_custom_header_setup().
  */
-function luv_tk_header_style() {
+function jqluv_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -79,15 +77,15 @@ function luv_tk_header_style() {
 	</style>
 	<?php
 }
-endif; // luv_tk_header_style
+endif; // jqluv_header_style
 
-if ( ! function_exists( 'luv_tk_admin_header_style' ) ) :
+if ( ! function_exists( 'jqluv_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see luv_tk_custom_header_setup().
+ * @see jqluv_custom_header_setup().
  */
-function luv_tk_admin_header_style() {
+function jqluv_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -107,15 +105,15 @@ function luv_tk_admin_header_style() {
 	</style>
 <?php
 }
-endif; // luv_tk_admin_header_style
+endif; // jqluv_admin_header_style
 
-if ( ! function_exists( 'luv_tk_admin_header_image' ) ) :
+if ( ! function_exists( 'jqluv_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see luv_tk_custom_header_setup().
+ * @see jqluv_custom_header_setup().
  */
-function luv_tk_admin_header_image() {
+function jqluv_admin_header_image() {
 	$style        = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 	$header_image = get_header_image();
 ?>
@@ -128,4 +126,4 @@ function luv_tk_admin_header_image() {
 	</div>
 <?php
 }
-endif; // luv_tk_admin_header_image
+endif; // jqluv_admin_header_image

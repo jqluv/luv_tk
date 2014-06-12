@@ -1,9 +1,9 @@
 /*
-Theme Name: luv_tk
+Theme Name: jqluv
 Theme URI: http://themekraft.com/tk/
 Author: ThemeKraft
 Author URI: http://themekraft.com/
-Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
+Description: Hi, I am the ultra minimal starter theme jqluv, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
 Version: 1.1.2
 License: GNU General Public License
 License URI: see license.txt
@@ -207,3 +207,95 @@ object {
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+
+
+body{
+	font-family: 'Source Sans Pro','Arial',sans-serif;
+}
+
+.container{
+	width: 970px;
+}
+
+.site-header{
+	margin: 0 0 5px 0;
+	padding-bottom: 0;
+	height: 128px;
+	background-color: #0d2140;
+	box-shadow: 0 5px 0 rgba(0,0,0,0.2);
+}
+
+#main-menu{
+	margin-top: 77px;
+}
+
+#main-menu a{
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#main-menu a:hover{
+	background-color: #2e7ce0;	
+}
+
+.page-header{
+	text-align: center;
+	border: none;
+	padding: 0;
+}
+
+.site-footer{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: #0d2140;
+}
+
+.site-footer .container{
+	padding: 0;
+	
+}
+.site-info p{
+	color: #bedae9;
+	font-size: 13px;
+	line-height: 1;
+	margin: 25px 0;
+	padding: 0;
+}
+
+.intro p{
+	font-size: 32px;
+	line-height: 38px;
+	text-align: left;
+	font-weight: 300;	
+}
+
+.intro b{
+	color: #2e7ce0;
+	font-weight: 900;
+}
+
+h1{
+	font-size: 94px;
+	letter-spacing: -2px;
+	margin-bottom: 25px;
+}
+
+h1, h2, h3{
+	color: #2e7ce0;
+	line-height: 1;
+	font-weight: 700;
+	text-align: center;
+}
+
+p{
+	font-size: 19px;
+	line-height: 22px;
+}
+
+
+

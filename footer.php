@@ -4,24 +4,19 @@
  *
  * Contains the closing of the id=main div and all content after
  *
- * @package _tk
  */
 ?>
-			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
-		</div><!-- close .row -->
-	</div><!-- close .container -->
-</div><!-- close .main-content -->
-
+			</div>
+		</div>
+	</div>
+</div>
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
 			<div class="site-footer-inner col-sm-12">
 
 				<div class="site-info">
-					<?php do_action( 'luv_tk_credits' ); ?>
-					<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', '_luv_tk' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', '_luv_tk' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( __( 'Theme: %1$s by %2$s.', '_luv_tk' ), '_luv_tk', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+					<p>Hand-coded with love by <a href="#!home">JQluv</a>. © 2014 All rights reserved.</p>
 				</div><!-- close .site-info -->
 
 			</div>
